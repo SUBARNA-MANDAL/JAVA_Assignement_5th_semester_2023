@@ -1,15 +1,10 @@
-/*
- * 
+/* 
  Write a Java program to create a class Shape" and 3 other classes named Square, Rectangle and Triangle derived from it, all containing a overridden method cal_area() to calculate area of a Square or a Rectangle or a Triangle. Assume suitable data members( 2 int type data members only) and member methods(get() and put() in all classes. Also validate the inputs.
- 
  */
-
 import java.util.Scanner;
 class shape{
     int a,b;
-    void get(){};
     void cal_area(){};
-
 }
 class square extends shape{
     void get(){
@@ -25,7 +20,7 @@ class square extends shape{
         System.out.print("So the area of the square is : "+a*a);
     }
     void put(){
-        System.out.println(" , Where entered side value of the square is : "+a);
+        System.out.println(" , Where entered side value of the square is : "+a+"\n");
     }
 }
 class Triangle extends shape{
@@ -48,7 +43,7 @@ class Triangle extends shape{
         System.out.print("So the area of the square is : "+0.5*a*b);
     }
     void put(){
-        System.out.println(" , Where entered base is : "+a + " and the height is : "+b);
+        System.out.println(" , Where entered base is : "+a + " and the height is : "+b+"\n");
     }
 }
 class Rectangle extends shape{
@@ -71,12 +66,9 @@ class Rectangle extends shape{
         System.out.print("So the area of the rectangle is : "+a*b);
     }
     void put(){
-        System.out.println(" , Where entered length is : "+a + " and the weidth is : "+b);
+        System.out.println(" , Where entered length is : "+a + " and the weidth is : "+b+"\n");
     }
 }
-
-
-
 public class Test1 {
     public static void main(String args[]){
         square s1 = new square();
@@ -93,7 +85,6 @@ public class Test1 {
         r1.put();
     }
 }
-
 /*
 
 Output : 
@@ -116,6 +107,5 @@ Enter the weidth of the rectangle : -8
 Invalid Input!!!
 Enter the weidth value again : 3
 So the area of the rectangle is : 18 , Where entered length is : 6 and the weidth is : 3
-
 
  */

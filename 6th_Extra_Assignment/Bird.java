@@ -2,6 +2,7 @@
 // Use this editor to write, compile and run your Java code online
 
 /*
+
 Create an abstract class 'Bird' containing the following members:
 Name(String),Colour(String)
 Bird(String,String) 
@@ -16,7 +17,7 @@ class FlyingBird extends Bird{
         super(Na, co);
     }
     void Fly(){
-        System.out.println("Hello I am "+Name+" a flying bird of colour "+colour);
+        System.out.println("Hello It's a "+Name+" a flying bird of colour "+colour);
     }
 }
 class NonFlyingBird extends Bird{
@@ -24,7 +25,7 @@ class NonFlyingBird extends Bird{
         super(Na, co);
     }
     void Fly(){
-        System.out.println("Hello I am "+Name+" a Non flying bird of colour "+colour+"");
+        System.out.println("Hello It's a "+Name+" a Nonflying bird of colour "+colour+"");
     }
 }
 abstract class Bird {
@@ -33,7 +34,7 @@ abstract class Bird {
         Name = N;
         colour = c;
     }
-    void Fly(){};
+    abstract void Fly();
     public static void main(String args[]){
         FlyingBird f1 = new FlyingBird("Parrot", "green");
         f1.Fly();

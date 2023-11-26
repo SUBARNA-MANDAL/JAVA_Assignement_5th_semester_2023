@@ -28,7 +28,7 @@ class Savings_Ac extends Account{
         Acc_Balance = Acc_Balance + (Acc_Balance*ROI)/100;
     }
     public void showdata(){
-        Show();
+        Showdata();
         System.out.println("ROI : "+ROI);
         System.out.println("Updated Account Balance is : "+Acc_Balance);
     }
@@ -42,7 +42,7 @@ class Current_Ac extends Account{
     }
     public void showdata(){
         System.out.println("Current Account details : ");
-        Show();
+        Showdata();
         System.out.println("Account Balance : "+Acc_Balance);
         System.out.println("Min balance to have : "+Min_Balance);
         if(Acc_Balance<Min_Balance) System.out.println("InSufficient balance in the account.");
@@ -60,11 +60,11 @@ class TD_Ac extends Account{
     }
     public void compute(){
         System.out.println("TD_Account drtails : ");
-        //Maturity_Balance = Principal * float(Math.pow(1+ROI/100,Time));    // Incorrect...........................
-        /************** */
+       // Maturity_Balance = Principal * float(Math.pow(1+ROI/100,Time));    // Incorrect...........................
+       
     }
     public void showdata(){
-        Show();
+        Showdata();
         System.out.println("Principal amount is : "+Principal);
         System.out.println("Total term is : "+Term);
         System.out.println("Rate of interests is : "+ROI);
@@ -72,13 +72,13 @@ class TD_Ac extends Account{
     }
 }
 class Account{
-    private String  Acc_No,C_Name,Contact_No;
+    String  Acc_No,C_Name,Contact_No;
     Account(String an,String cname,String cno){
         this.Acc_No = an;
         this.C_Name = cname;
         this.Contact_No = cno;
     }
-    public void Show(){
+    void Showdata(){
         System.out.println("Account No : "+Acc_No);
         System.out.println("Customer name : "+C_Name);
         System.out.println("Contact No : "+Contact_No);
@@ -88,11 +88,11 @@ class Account{
         S1.compute();
         S1.showdata();
 
-        Current_Ac c1 = new Current_Ac("465656464699415852","Sam Das","959856685595",11000,10000);
+        Current_Ac c1 = new Current_Ac("465656464699415852","Sam verma","959856685595",11000,10000);
         c1.showdata();
 
 
-        TD_Ac t1 = new TD_Ac("6568984479794","Raj Das","65366464664",20000,2,1,10);
+        TD_Ac t1 = new TD_Ac("6568984479794","Raj Shaw","65366464664",20000,2,1,10);
         t1.compute();
         t1.showdata();
     }

@@ -1,6 +1,6 @@
 /*
 Write a java program to create a class Discount containing SalesAmount as a data member.
-* SalesAmount should be given as input using approptiate inoput() method/Constructor defined 
+* SalesAmount should be given as input using approptiate input() method/Constructor defined 
 in the class.
 
 *** In the class,defined 2 method viz. compute1() and compute2(),
@@ -22,8 +22,8 @@ mentioned conditions :
 */
 
 class Discount{
-    private float salesamount;
-    private float discount;
+    float salesamount;
+    float discount;
     Discount(float sa){
         this.salesamount = sa;
     }

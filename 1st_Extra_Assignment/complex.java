@@ -51,6 +51,12 @@ class complex {
 
 
 
+
+
+/*
+
+
+//Without Using user defined input ------------------------------------
 class complex {
     int a,b;
     complex(int A,int B){
@@ -84,7 +90,6 @@ class complex {
 }
 
 
-/*
 
 Output : 
 Initially c1 is : 2+5i
@@ -93,3 +98,44 @@ After Substuction of c1 : 3+6i
  * 
  * 
  */
+
+
+
+
+
+ //Using user defined input---------------------------------
+ 
+import java.util.Scanner;
+ class complex {
+    int a,b;
+    complex(int A,int B){
+        a = A;
+        b = B;
+    }
+    void add(int A,int B){
+        a +=A;
+        b +=B;
+    }
+    void sub(int A,int B){
+        a -=A;
+        b -=B;
+    }
+    void display(){
+            System.out.println(" "+a + "+" + b+"i");
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the real and imaginary part : ");
+        complex c1 = new complex(sc.nextInt(),sc.nextInt());
+        System.out.print("Initially c1 : ");
+        c1.display();
+        System.out.print("After addition of c1 :");
+        c1.add(3,8);
+        c1.display();
+        System.out.print("After Substuction of c1 :");
+        c1.sub(2,7);
+        c1.display();
+
+    }
+    
+}
