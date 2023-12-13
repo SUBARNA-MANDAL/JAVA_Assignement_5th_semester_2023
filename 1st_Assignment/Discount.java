@@ -34,7 +34,14 @@ class Discount{
         else if(salesamount>=40000) discount = (salesamount*10)/100;
     }
     public void compute2(){
-
+        discount = (salesamount<10000)  ? 0 :
+                    (
+                        (salesamount>=10000 && salesamount<20000)    ? (salesamount*3)/100 :
+                        (
+                            (salesamount>=20000 && salesamount<40000)    ? 
+                                (salesamount*5)/100 :  (salesamount*10)/100
+                        )
+                    );
     }
     public void display(){
         System.out.println("The discount for pursuing "+salesamount+" is : "+discount);
@@ -47,7 +54,7 @@ class Discount{
         d1.display();
 
         Discount d2 = new Discount(40000);
-        d2.compute1();
+        d2.compute2();
         d2.display();
     }
 }
