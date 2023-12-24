@@ -12,7 +12,7 @@ Assume default values for the data Use showdata( members for which values have n
 class Student{
     String S_Name,Batch,Stream;
     int YearofAdm,Roll_No;
-    Student(String SN, int Roll){
+    Student(String SN, int Roll){               
         S_Name = SN;
         Roll_No = Roll;
     }

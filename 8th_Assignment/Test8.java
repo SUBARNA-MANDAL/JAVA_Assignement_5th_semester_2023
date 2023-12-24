@@ -24,7 +24,6 @@ class sorting{
                     a[j]= a[j+1];
                     a[j+1] = t;
                 }
-                
             }
         }
     }

@@ -2,7 +2,7 @@
  Write a Java program to create a class Shape" and 3 other classes named Square, Rectangle and Triangle derived from it, all containing a overridden method cal_area() to calculate area of a Square or a Rectangle or a Triangle. Assume suitable data members( 2 int type data members only) and member methods(get() and put() in all classes. Also validate the inputs.
  */
 import java.util.Scanner;
-class shape{
+abstract class shape{
     int a,b;
     void cal_area(){};
 }
@@ -32,7 +32,7 @@ class Triangle extends shape{
             System.out.print("Invalid Input!!!\nEnter the base value again : ");
             a = sc.nextInt();
         }
-        System.out.print("Enter the heirgt of the triangle : ");
+        System.out.print("Enter the heigt of the triangle : ");
         b = sc.nextInt();
         while(b<=0){
             System.out.print("Invalid Input!!!\nEnter the height value again : ");

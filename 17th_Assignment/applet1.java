@@ -7,7 +7,7 @@ public class applet1 extends Applet {
         int y = 50;
         g.setColor(Color.BLACK);
         g.setFont(new Font("Arial",Font.BOLD,16));
-        g.drawString("SUBARNA MANDAL", x, y);
+        g.drawString("SUBARNA MANDAL", x, y);g.
     }
 }
 /*

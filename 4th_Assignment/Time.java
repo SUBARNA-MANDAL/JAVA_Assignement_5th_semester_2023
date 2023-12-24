@@ -40,7 +40,7 @@ class Time {
         }
         if(T.min>=60){
             T.hr +=1;
-            T.min%=60;;
+            T.min%=60;
         }
         return T;
     }
@@ -66,7 +66,6 @@ class Time {
         t1.showtime();
         t2.showtime();
         t3.showtime();
-
     }
 }
 

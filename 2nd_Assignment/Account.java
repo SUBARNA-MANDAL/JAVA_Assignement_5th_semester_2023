@@ -14,6 +14,7 @@ and showdata() methods for displaying the data members.Also, define compute() me
  for different computeations in all classes such as interest calclations etc.
 
 */
+
 import java.lang.Math;
 class Savings_Ac extends Account{
     private float ROI,Acc_Balance;
@@ -50,18 +51,16 @@ class Current_Ac extends Account{
     }
 }
 class TD_Ac extends Account{
-    private float Principal,Term,Time,ROI,Maturity_Balance;
-    TD_Ac(String ANo,String Cname,String Cno,float prin,float trm,float time,float roi){
+    private double Principal,Term,ROI,Maturity_Balance;
+    TD_Ac(String ANo,String Cname,String Cno,double prin,double trm,double roi){
         super(ANo,Cname,Cno);
         this.Principal = prin;
         this.Term = trm;
-        this.Time = time;
         this.ROI = roi;
     }
     public void compute(){
         System.out.println("TD_Account drtails : ");
-       // Maturity_Balance = Principal * float(Math.pow(1+ROI/100,Time));    // Incorrect...........................
-       
+        this.Maturity_Balance = Principal * Math.pow(1 + ROI/100, Term);
     }
     public void showdata(){
         Showdata();
@@ -92,7 +91,7 @@ class Account{
         c1.showdata();
 
 
-        TD_Ac t1 = new TD_Ac("6568984479794","Raj Shaw","65366464664",20000,2,1,10);
+        TD_Ac t1 = new TD_Ac("6568984479794","Raj Shaw","65366464664",20000,2,10);
         t1.compute();
         t1.showdata();
     }
