@@ -135,7 +135,6 @@ import java.util.Scanner;
         System.out.print("After Substuction of c1 :");
         c1.sub(2,7);
         c1.display();
-
+        sc.close();
     }
-    
 }

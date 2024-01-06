@@ -1,5 +1,9 @@
 /* 
- Write a Java program to create a class Shape" and 3 other classes named Square, Rectangle and Triangle derived from it, all containing a overridden method cal_area() to calculate area of a Square or a Rectangle or a Triangle. Assume suitable data members( 2 int type data members only) and member methods(get() and put() in all classes. Also validate the inputs.
+ Write a Java program to create a class Shape" and 3 other classes 
+ named Square, Rectangle and Triangle derived from it, all containing a 
+ overridden method cal_area() to calculate area of a Square or a Rectangle or a Triangle.
+  Assume suitable data members( 2 int type data members only) and member 
+  methods(get() and put() in all classes. Also validate the inputs.
  */
 import java.util.Scanner;
 abstract class shape{
@@ -7,7 +11,7 @@ abstract class shape{
     void cal_area(){};
 }
 class square extends shape{
-    void get(){
+    void put(){
         Scanner sc  = new Scanner(System.in);
         System.out.print("Enter the side of the square : ");
         a = sc.nextInt();
@@ -19,12 +23,12 @@ class square extends shape{
     void cal_area(){
         System.out.print("So the area of the square is : "+a*a);
     }
-    void put(){
+    void get(){
         System.out.println(" , Where entered side value of the square is : "+a+"\n");
     }
 }
 class Triangle extends shape{
-    void get(){
+    void put(){
         Scanner sc  = new Scanner(System.in);
         System.out.print("Enter the base of the triangle : ");
         a = sc.nextInt();
@@ -42,12 +46,12 @@ class Triangle extends shape{
     void cal_area(){
         System.out.print("So the area of the square is : "+0.5*a*b);
     }
-    void put(){
+    void get(){
         System.out.println(" , Where entered base is : "+a + " and the height is : "+b+"\n");
     }
 }
 class Rectangle extends shape{
-    void get(){
+    void put(){
         Scanner sc  = new Scanner(System.in);
         System.out.print("Enter the length of the rectangle : ");
         a = sc.nextInt();
@@ -65,24 +69,24 @@ class Rectangle extends shape{
     void cal_area(){
         System.out.print("So the area of the rectangle is : "+a*b);
     }
-    void put(){
+    void get(){
         System.out.println(" , Where entered length is : "+a + " and the weidth is : "+b+"\n");
     }
 }
 public class Test1 {
     public static void main(String args[]){
         square s1 = new square();
-        s1.get();
-        s1.cal_area();
         s1.put();
+        s1.cal_area();
+        s1.get();
         Triangle t1 = new Triangle();
-        t1.get();
-        t1.cal_area();
         t1.put();
+        t1.cal_area();
+        t1.get();
         Rectangle r1 = new Rectangle();
-        r1.get();
-        r1.cal_area();
         r1.put();
+        r1.cal_area();
+        r1.get();
     }
 }
 /*

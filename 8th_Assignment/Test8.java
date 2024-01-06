@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class sorting{
     int n;
     int a[] = new int[10];
@@ -15,7 +14,6 @@ class sorting{
         System.out.print("Current elements are : ");
         for(int i=0;i<n;i++)    System.out.print(a[i]+" ");
     }
-
     void Bubble_sort(){
         for(int i = 0;i<n-1;i++){
             for(int j=0;j<n-i-1;j++){
@@ -27,7 +25,6 @@ class sorting{
             }
         }
     }
-
     void Insertion_sort(){
         for(int i = 1;i<n;i++){
             int t = a[i];
@@ -39,7 +36,6 @@ class sorting{
             a[j+1] = t;
         }
     }
-    
 }
 public class Test8 {
     public static void main(String[] args) {
@@ -54,7 +50,6 @@ public class Test8 {
         s2.Insertion_sort();
         System.out.println("Using insertion sort -- ");
         s2.get_all();
-
     }
 }
 

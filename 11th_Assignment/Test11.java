@@ -36,7 +36,6 @@ interface CCA_Score{
     static int CCA_credit = 5;
     void show_CCA_cred();
 }
-
 class sem_result extends Test_Marks implements CCA_Score{
     void put_all(String na,double roll,float m1,float m2){
         super.put_all(na, roll, m1, m2);
@@ -49,10 +48,6 @@ class sem_result extends Test_Marks implements CCA_Score{
         System.out.println("CCA_credit is : "+CCA_credit);
     }
 }
-    
-
-
-
 public class Test11 {
     public static void main(String[] args) {
         sem_result s1 = new sem_result();

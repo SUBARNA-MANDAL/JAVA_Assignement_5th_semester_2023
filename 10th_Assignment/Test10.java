@@ -31,7 +31,6 @@ public class Test10 {
 
         Rectangle r1 = new Rectangle();
         r1.cal_area(3, 6);
-
     }
 }
 

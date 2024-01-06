@@ -12,12 +12,13 @@ public class Math_operation{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the radious of the circle : ");
         r = sc.nextDouble();
+        sc.close();
     }
     void get_area(){
-        System.out.println("The area of the circle of radious"+r+" is "+Math.PI*r*r);
+        System.out.println("The area of the circle of radious "+r+" is "+Math.PI*r*r);
     }
     void get_perimeter(){
-        System.out.println("The perimeter of the circle of radious"+r+" is "+2*Math.PI*r);
+        System.out.println("The perimeter of the circle of radious "+r+" is "+2*Math.PI*r);
     }
     public static void main(String[] args) {
         Math_operation r1 = new Math_operation();
@@ -25,5 +26,4 @@ public class Math_operation{
         r1.get_area();
         r1.get_perimeter();
     }
-
 }
