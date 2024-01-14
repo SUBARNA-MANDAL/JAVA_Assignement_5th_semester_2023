@@ -1,4 +1,4 @@
-# 1st Assignment problem statement----
+# -------1st Assignment problem statement-----
 
 Write a java program to create a class Discount containing SalesAmount as a data member. SalesAmount should be given as input using 
 approptiate input() method/Constructor defined in the class.
