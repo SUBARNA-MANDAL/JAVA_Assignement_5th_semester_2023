@@ -1,7 +1,7 @@
 <h1 align = "center">-------1st Assignment problem statement-----</h1>
 
-  Write a java program to create a class Discount containing SalesAmount as a data member. SalesAmount should be given as input using 
-  approptiate input() method/Constructor defined in the class.
+    Write a java program to create a class Discount containing SalesAmount as a data member. SalesAmount should be given as input using 
+    approptiate input() method/Constructor defined in the class.
   
     In the class,defined 2 method viz. compute1() and compute2(),those will compute the discount to be given using if-else 
     constructor and ternary operator repectively following the bellow mentioned conditions :
